@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="address-book-manager.jnlp">
+  <information>
+    <title>address-book-manager</title>
+    <vendor>Sabri</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="address-book-manager.jar" size="5150" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2323355" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="address-book-manager" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="fr.sabralex.m1.pui.ContactManagerFX"  name="address-book-manager" />
+  <update check="always"/>
+</jnlp>

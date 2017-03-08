@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="fr.sabralex.m1.pui.FXMLMainFrameController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <MenuBar fx:id="mainMenuBar" layoutX="-1.0" layoutY="-1.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="New" />
+                  <MenuItem mnemonicParsing="false" text="Open" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Save as..." />
+                  <MenuItem mnemonicParsing="false" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <JFXToolbar fx:id="toolBar" layoutX="9.0" layoutY="31.0" prefHeight="34.0" prefWidth="583.0" style="-fx-border-color: black;">
+         <left>
+            <HBox prefHeight="25.0" prefWidth="282.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton prefHeight="43.0" prefWidth="85.0" text="New Contact" />
+                  <JFXButton prefHeight="44.0" prefWidth="81.0" text="Edit Contact" />
+                  <JFXButton prefHeight="77.0" prefWidth="104.0" text="Remove Contact" />
+               </children>
+            </HBox>
+         </left>
+         <right>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTextField prefHeight="11.0" prefWidth="135.0" />
+                  <JFXButton prefHeight="32.0" prefWidth="34.0" text="?" />
+               </children>
+            </HBox>
+         </right>
+      </JFXToolbar>
+      <AnchorPane layoutX="9.0" layoutY="96.0" prefHeight="341.0" prefWidth="583.0">
+         <children>
+            <fx:include source="FXMLMainPanel.fxml" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
