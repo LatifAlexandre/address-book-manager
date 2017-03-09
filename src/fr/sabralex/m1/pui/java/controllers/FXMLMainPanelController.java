@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.sabralex.m1.pui;
+package fr.sabralex.m1.pui.java.controllers;
 
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTreeTableView;
@@ -41,5 +41,4 @@ public class FXMLMainPanelController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO 
     }    
-    
 }

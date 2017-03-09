@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="267.0" prefWidth="359.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="fr.sabralex.m1.pui.java.controllers.FXMLAddContactFormController">
+   <children>
+      <JFXComboBox fx:id="addressBookComboBox" layoutX="97.0" layoutY="14.0" prefHeight="25.0" prefWidth="166.0" promptText="Address Book" />
+      <JFXTextField fx:id="firstNameTextField" labelFloat="true" layoutX="11.0" layoutY="93.0" prefHeight="23.0" prefWidth="150.0" promptText="First name" />
+      <JFXTextField fx:id="lastNameTextField" labelFloat="true" layoutX="200.0" layoutY="93.0" prefHeight="23.0" prefWidth="150.0" promptText="Last name" />
+      <JFXToggleButton fx:id="genderToggleButton" layoutX="131.0" layoutY="45.0" text="Man" toggleColor="#a4356b" toggleLineColor="#fc53a2" unToggleColor="#39279e" unToggleLineColor="#6142ff" />
+      <JFXTextField fx:id="ageTextField" labelFloat="true" layoutX="199.0" layoutY="139.0" prefHeight="23.0" prefWidth="150.0" promptText="Age" />
+      <JFXTextField fx:id="emailTextField" editable="false" labelFloat="true" layoutX="11.0" layoutY="139.0" prefHeight="23.0" prefWidth="150.0" promptText="\@" />
+      <JFXTreeTableView fx:id="numbersTableView" layoutX="30.0" layoutY="181.0" prefHeight="72.0" prefWidth="300.0" />
+   </children>
+</AnchorPane>

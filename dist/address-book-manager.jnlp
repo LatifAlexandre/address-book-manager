@@ -8,12 +8,12 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="address-book-manager.jar" size="5150" download="eager" />
-    <jar href="lib\jfoenix.jar" size="2323355" download="eager" />
+    <jar href="address-book-manager.jar" size="8342" download="eager" />
+    <jar href="lib/jfoenix.jar" size="2323355" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="address-book-manager" >
     <param name="requiredFXVersion" value="8.0+"/>
   </applet-desc>
-  <jfx:javafx-desc  width="800" height="600" main-class="fr.sabralex.m1.pui.ContactManagerFX"  name="address-book-manager" />
+  <jfx:javafx-desc  width="800" height="600" main-class="fr.sabralex.m1.pui.java.ContactManagerFX"  name="address-book-manager" />
   <update check="always"/>
 </jnlp>

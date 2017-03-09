@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane id="AnchorPane" fx:id="mainPanelAnchorPane" prefHeight="341.0" prefWidth="583.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="fr.sabralex.m1.pui.FXMLMainPanelController">
+<AnchorPane id="AnchorPane" fx:id="mainPanelAnchorPane" prefHeight="341.0" prefWidth="583.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="fr.sabralex.m1.pui.java.controllers.FXMLMainPanelController">
    <children>
       <JFXTreeTableView fx:id="contactsTreeTable" layoutX="8.0" layoutY="57.0" prefHeight="281.0" prefWidth="231.0">
          <columns>
