@@ -38,11 +38,11 @@
       </MenuBar>
       <JFXToolbar fx:id="toolBar" layoutX="9.0" layoutY="31.0" prefHeight="34.0" prefWidth="583.0" style="-fx-border-color: black;">
          <left>
-            <HBox prefHeight="25.0" prefWidth="282.0" BorderPane.alignment="CENTER">
+            <HBox prefHeight="32.0" prefWidth="349.0" BorderPane.alignment="CENTER">
                <children>
-                  <JFXButton fx:id="newContactButton" onAction="#handleNewContactButtonAction" prefHeight="43.0" prefWidth="85.0" text="New Contact" />
-                  <JFXButton prefHeight="44.0" prefWidth="81.0" text="Edit Contact" />
-                  <JFXButton prefHeight="77.0" prefWidth="104.0" text="Remove Contact" />
+                  <JFXButton fx:id="newContactButton" onAction="#handleNewContactButtonAction" prefHeight="32.0" prefWidth="115.0" text="New Contact" />
+                  <JFXButton prefHeight="32.0" prefWidth="106.0" text="Edit Contact" />
+                  <JFXButton prefHeight="32.0" prefWidth="127.0" text="Remove Contact" />
                </children>
             </HBox>
          </left>

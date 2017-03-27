@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXTreeTableView?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.control.TreeTableColumn?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="AnchorPane" fx:id="mainPanelAnchorPane" prefHeight="341.0" prefWidth="583.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="fr.sabralex.m1.pui.java.controllers.FXMLMainPanelController">
+<AnchorPane id="AnchorPane" fx:id="mainPanelAnchorPane" prefHeight="341.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.sabralex.m1.pui.java.controllers.FXMLMainPanelController">
    <children>
-      <JFXTreeTableView fx:id="contactsTreeTable" layoutX="8.0" layoutY="57.0" prefHeight="281.0" prefWidth="231.0">
-         <columns>
-            <TreeTableColumn prefWidth="75.0" text="Column X" />
-            <TreeTableColumn prefWidth="81.0" text="Column X" />
-            <TreeTableColumn prefWidth="74.0" text="Column X" />
-         </columns>
-      </JFXTreeTableView>
+      <JFXTreeTableView fx:id="contactsTreeTable" layoutX="8.0" layoutY="57.0" prefHeight="281.0" prefWidth="231.0" />
       <TitledPane fx:id="detailsTitledPane" animated="false" collapsible="false" layoutX="249.0" layoutY="14.0" prefHeight="323.0" prefWidth="325.0" text="Contact Details">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="297.0" prefWidth="328.0" />
