@@ -51,12 +51,12 @@
             </HBox>
          </right>
       </JFXToolbar>
-      <AnchorPane layoutX="9.0" layoutY="96.0" prefHeight="355.0" prefWidth="676.0">
+      <AnchorPane layoutX="9.0" layoutY="70.0" prefHeight="380.0" prefWidth="676.0">
          <children>
             <fx:include source="FXMLMainPanel.fxml" />
          </children>
       </AnchorPane>
-      <Label fx:id="stateBar" layoutX="14.0" layoutY="451.0" prefHeight="29.0" prefWidth="664.0" style="-fx-border-color: black;" text="Selected contact : Toto Toto" />
+      <Label fx:id="stateBar" layoutX="14.0" layoutY="453.0" prefHeight="29.0" prefWidth="664.0" style="-fx-border-color: black;" text="Selected contact : Toto Toto" />
     </children>
    <cursor>
       <Cursor fx:constant="DEFAULT" />

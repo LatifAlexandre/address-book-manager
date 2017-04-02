@@ -5,19 +5,34 @@
 <?import com.jfoenix.controls.JFXTextField?>
 <?import com.jfoenix.controls.JFXToggleButton?>
 <?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="358.0" prefWidth="359.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.sabralex.m1.pui.java.controllers.FXMLAddContactFormController">
+<AnchorPane id="AnchorPane" prefHeight="491.0" prefWidth="359.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.sabralex.m1.pui.java.controllers.FXMLAddContactFormController">
    <children>
-      <JFXComboBox fx:id="addressBooksComboBox" labelFloat="true" layoutX="97.0" layoutY="14.0" prefHeight="25.0" prefWidth="166.0" promptText="Address Book" />
-      <JFXTextField fx:id="firstNameTextField" labelFloat="true" layoutX="11.0" layoutY="93.0" prefHeight="23.0" prefWidth="150.0" promptText="First name" />
-      <JFXTextField fx:id="lastNameTextField" labelFloat="true" layoutX="200.0" layoutY="93.0" prefHeight="23.0" prefWidth="150.0" promptText="Last name" />
-      <JFXToggleButton fx:id="genderToggleButton" layoutX="131.0" layoutY="45.0" onAction="#handleGenderToggleButtonAction" text="Man" toggleColor="#a4356b" toggleLineColor="#fc53a2" unToggleColor="#39279e" unToggleLineColor="#6142ff" />
-      <JFXTextField fx:id="ageTextField" labelFloat="true" layoutX="199.0" layoutY="139.0" prefHeight="23.0" prefWidth="150.0" promptText="Age" />
-      <JFXTextField fx:id="emailTextField" editable="false" labelFloat="true" layoutX="11.0" layoutY="139.0" prefHeight="23.0" prefWidth="150.0" promptText="\@" />
-      <JFXTreeTableView fx:id="numbersTableView" layoutX="30.0" layoutY="247.0" prefHeight="105.0" prefWidth="300.0" showRoot="false" />
-      <JFXButton fx:id="addNumberButton" buttonType="RAISED" layoutX="131.0" layoutY="181.0" onAction="#handleAddNumberButonAction" ripplerFill="#3b9deb" style="-fx-background-color: #3a9cea;" text="Add number" />
-      <JFXComboBox fx:id="numberTypeComboBox" labelFloat="true" layoutX="11.0" layoutY="214.0" prefHeight="25.0" prefWidth="150.0" promptText="Number type" visible="false" />
-      <JFXTextField fx:id="numberTextField" layoutX="186.0" layoutY="215.0" onKeyPressed="#handleNumberTextFieldKeyPress" visible="false" />
+      <JFXComboBox fx:id="addressBooksComboBox" labelFloat="true" layoutX="97.0" layoutY="15.0" prefHeight="25.0" prefWidth="166.0" promptText="Address Book" />
+      <JFXToggleButton fx:id="genderToggleButton" layoutX="109.0" layoutY="31.0" onAction="#handleGenderToggleButtonAction" prefHeight="58.0" prefWidth="155.0" text="Man" toggleColor="#a4356b" toggleLineColor="#fc53a2" unToggleColor="#39279e" unToggleLineColor="#6142ff" />
+      <AnchorPane layoutX="5.0" layoutY="88.0" prefHeight="102.0" prefWidth="351.0" style="-fx-border-color: grey;" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="88.0">
+         <children>
+            <JFXTextField fx:id="firstNameTextField" labelFloat="true" layoutX="5.0" layoutY="5.0" prefHeight="23.0" prefWidth="150.0" promptText="First name" />
+            <JFXTextField fx:id="lastNameTextField" labelFloat="true" layoutX="189.0" layoutY="5.0" prefHeight="23.0" prefWidth="150.0" promptText="Last name" />
+            <JFXTextField fx:id="emailTextField" editable="false" labelFloat="true" layoutX="5.0" layoutY="51.0" prefHeight="23.0" prefWidth="150.0" promptText="\@" />
+            <JFXTextField fx:id="ageTextField" labelFloat="true" layoutX="188.0" layoutY="51.0" prefHeight="23.0" prefWidth="150.0" promptText="Age" />
+         </children>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane layoutX="5.0" layoutY="196.0" prefHeight="88.0" prefWidth="351.0" style="-fx-border-color: grey;">
+         <children>
+            <JFXTextField labelFloat="true" layoutX="5.0" layoutY="3.0" prefHeight="23.0" prefWidth="150.0" promptText="Street" />
+            <JFXTextField labelFloat="true" layoutX="5.0" layoutY="39.0" prefHeight="23.0" prefWidth="150.0" promptText="City" />
+            <JFXTextField labelFloat="true" layoutX="209.0" layoutY="22.0" prefHeight="24.0" prefWidth="117.0" promptText="Postal code" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="addNumberButton" buttonType="RAISED" layoutX="131.0" layoutY="302.0" onAction="#handleAddNumberButonAction" ripplerFill="#3b9deb" style="-fx-background-color: #3a9cea;" text="Add number" />
+      <JFXComboBox fx:id="numberTypeComboBox" labelFloat="true" layoutX="14.0" layoutY="335.0" prefHeight="25.0" prefWidth="150.0" promptText="Number type" visible="false" />
+      <JFXTextField fx:id="numberTextField" layoutX="186.0" layoutY="336.0" visible="false" />
+      <JFXTreeTableView fx:id="numbersTableView" layoutX="20.0" layoutY="361.0" prefHeight="121.0" prefWidth="320.0" showRoot="false" />
    </children>
 </AnchorPane>

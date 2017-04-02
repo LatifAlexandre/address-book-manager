@@ -2,6 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TitledPane?>
@@ -9,37 +10,43 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" fx:id="mainPanelAnchorPane" prefHeight="355.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.sabralex.m1.pui.java.controllers.FXMLMainPanelController">
+<AnchorPane id="AnchorPane" fx:id="mainPanelAnchorPane" prefHeight="380.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.sabralex.m1.pui.java.controllers.FXMLMainPanelController">
    <children>
-      <TitledPane fx:id="detailsTitledPane" animated="false" collapsible="false" layoutX="314.0" layoutY="14.0" prefHeight="332.0" prefWidth="353.0" text="Contact Details : Toto Toto">
+      <TitledPane fx:id="detailsTitledPane" animated="false" collapsible="false" layoutX="314.0" layoutY="2.0" prefHeight="374.0" prefWidth="353.0" text="Contact Details : Toto Toto">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="308.0" prefWidth="351.0">
                <children>
-                  <TitledPane collapsible="false" layoutX="3.0" layoutY="3.0" prefHeight="90.0" prefWidth="345.0" text="Identity">
+                  <TitledPane collapsible="false" layoutX="3.0" layoutY="3.0" prefHeight="110.0" prefWidth="345.0" text="Identity">
                      <content>
-                        <HBox>
+                        <HBox prefHeight="83.0" prefWidth="343.0">
                            <children>
-                              <VBox prefHeight="53.0" prefWidth="165.0">
+                              <VBox alignment="CENTER_RIGHT" prefHeight="53.0" prefWidth="165.0">
                                  <children>
                                     <Label prefHeight="25.0" prefWidth="178.0" text="Name : Mr. toto toto" />
                                     <Label prefHeight="25.0" prefWidth="282.0" text="Email : toto.toto@toto.fr" />
                                  </children>
+                                 <HBox.margin>
+                                    <Insets right="7.0" />
+                                 </HBox.margin>
                               </VBox>
-                              <VBox alignment="TOP_RIGHT" prefHeight="48.0" prefWidth="165.0">
+                              <VBox alignment="CENTER_RIGHT" prefHeight="48.0" prefWidth="152.0">
                                  <children>
                                     <Label prefHeight="25.0" prefWidth="282.0" text="Age          : 30" textAlignment="RIGHT" />
                                     <Label prefHeight="25.0" prefWidth="282.0" text="Gender    : Man" textAlignment="RIGHT" />
                                  </children>
+                                 <HBox.margin>
+                                    <Insets left="7.0" />
+                                 </HBox.margin>
                               </VBox>
                            </children>
                         </HBox>
                      </content>
                   </TitledPane>
-                  <TitledPane collapsible="false" layoutX="3.0" layoutY="96.0" prefHeight="90.0" prefWidth="345.0" text="Phone numbers">
+                  <TitledPane collapsible="false" layoutX="3.0" layoutY="116.0" prefHeight="110.0" prefWidth="345.0" text="Phone numbers">
                      <content>
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <VBox prefHeight="200.0" prefWidth="100.0">
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                                  <children>
                                     <Label prefHeight="25.0" prefWidth="329.0" text="Mobile : 06 06 06 06 06" />
                                     <Label prefHeight="25.0" prefWidth="329.0" text="Office  : 04 04 04 04 04" />
@@ -49,9 +56,9 @@
                         </VBox>
                      </content>
                   </TitledPane>
-                  <TitledPane collapsible="false" layoutX="3.0" layoutY="190.0" prefHeight="111.0" prefWidth="345.0" text="Address">
+                  <TitledPane collapsible="false" layoutX="3.0" layoutY="229.0" prefHeight="116.0" prefWidth="345.0" text="Address">
                      <content>
-                        <VBox prefHeight="200.0" prefWidth="100.0">
+                        <VBox prefHeight="115.0" prefWidth="343.0">
                            <children>
                               <Label prefHeight="22.0" prefWidth="323.0" text="000 The street" />
                               <Label prefHeight="22.0" prefWidth="323.0" text="00 000 The city" />
@@ -63,7 +70,7 @@
                </children></AnchorPane>
          </content>
       </TitledPane>
-      <JFXComboBox fx:id="addressBooksComboBox" labelFloat="true" layoutX="8.0" layoutY="14.0" prefHeight="26.0" prefWidth="300.0" promptText="Address Books" />
-      <TableView fx:id="contactsTable" layoutX="8.0" layoutY="48.0" prefHeight="298.0" prefWidth="300.0" />
+      <JFXComboBox fx:id="addressBooksComboBox" labelFloat="true" layoutX="8.0" layoutY="5.0" prefHeight="26.0" prefWidth="300.0" promptText="Address Books" />
+      <TableView fx:id="contactsTable" layoutX="8.0" layoutY="38.0" prefHeight="338.0" prefWidth="300.0" />
    </children>
 </AnchorPane>

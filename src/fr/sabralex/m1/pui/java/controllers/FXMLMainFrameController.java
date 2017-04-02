@@ -63,15 +63,6 @@ public class FXMLMainFrameController implements Initializable {
         } catch (IOException ex) {
             Logger.getLogger(FXMLMainFrameController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        /*
-        crawlerUIController.injectMainWindowController(this);
-        Scene downloadScene = new Scene(downloadWindow);
-        Stage mainStage = new Stage();
-        mainStage.setScene(downloadScene);
-        mainStage.initModality(Modality.APPLICATION_MODAL);
-        mainStage.setResizable(false);
-        mainStage.showAndWait();
-        */
     }
     
 }

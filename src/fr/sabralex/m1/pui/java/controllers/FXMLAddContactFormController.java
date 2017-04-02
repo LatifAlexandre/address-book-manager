@@ -110,9 +110,4 @@ public class FXMLAddContactFormController implements Initializable {
 		}
 
 	}
-
-	@FXML
-	void handleNumberTextFieldKeyPress(ActionEvent event) {
-
-	}
 }
