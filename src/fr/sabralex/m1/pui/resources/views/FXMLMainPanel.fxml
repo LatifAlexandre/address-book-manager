@@ -1,23 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.*?>
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXComboBox?>
-<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TitledPane?>
-<?import javafx.scene.control.TreeTableColumn?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" fx:id="mainPanelAnchorPane" prefHeight="341.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.sabralex.m1.pui.java.controllers.FXMLMainPanelController">
+<AnchorPane id="AnchorPane" fx:id="mainPanelAnchorPane" prefHeight="355.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.sabralex.m1.pui.java.controllers.FXMLMainPanelController">
    <children>
-      <JFXTreeTableView fx:id="contactsTreeTable" layoutX="8.0" layoutY="57.0" prefHeight="281.0" prefWidth="231.0" />
-      <TitledPane fx:id="detailsTitledPane" animated="false" collapsible="false" layoutX="249.0" layoutY="14.0" prefHeight="323.0" prefWidth="325.0" text="Contact Details">
+      <TitledPane fx:id="detailsTitledPane" animated="false" collapsible="false" layoutX="314.0" layoutY="14.0" prefHeight="332.0" prefWidth="353.0" text="Contact Details : Toto Toto">
          <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="297.0" prefWidth="328.0" />
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="308.0" prefWidth="351.0">
+               <children>
+                  <TitledPane collapsible="false" layoutX="3.0" layoutY="3.0" prefHeight="90.0" prefWidth="345.0" text="Identity">
+                     <content>
+                        <HBox>
+                           <children>
+                              <VBox prefHeight="53.0" prefWidth="165.0">
+                                 <children>
+                                    <Label prefHeight="25.0" prefWidth="178.0" text="Name : Mr. toto toto" />
+                                    <Label prefHeight="25.0" prefWidth="282.0" text="Email : toto.toto@toto.fr" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_RIGHT" prefHeight="48.0" prefWidth="165.0">
+                                 <children>
+                                    <Label prefHeight="25.0" prefWidth="282.0" text="Age          : 30" textAlignment="RIGHT" />
+                                    <Label prefHeight="25.0" prefWidth="282.0" text="Gender    : Man" textAlignment="RIGHT" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </content>
+                  </TitledPane>
+                  <TitledPane collapsible="false" layoutX="3.0" layoutY="96.0" prefHeight="90.0" prefWidth="345.0" text="Phone numbers">
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label prefHeight="25.0" prefWidth="329.0" text="Mobile : 06 06 06 06 06" />
+                                    <Label prefHeight="25.0" prefWidth="329.0" text="Office  : 04 04 04 04 04" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+                  <TitledPane collapsible="false" layoutX="3.0" layoutY="190.0" prefHeight="111.0" prefWidth="345.0" text="Address">
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label prefHeight="22.0" prefWidth="323.0" text="000 The street" />
+                              <Label prefHeight="22.0" prefWidth="323.0" text="00 000 The city" />
+                              <JFXButton buttonType="RAISED" defaultButton="true" prefHeight="26.0" prefWidth="314.0" text="See on map" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+               </children></AnchorPane>
          </content>
       </TitledPane>
-      <JFXComboBox fx:id="addressBooksComboBox" layoutX="8.0" layoutY="14.0" prefHeight="25.0" prefWidth="231.0" promptText="Address Books" />
+      <JFXComboBox fx:id="addressBooksComboBox" labelFloat="true" layoutX="8.0" layoutY="14.0" prefHeight="26.0" prefWidth="300.0" promptText="Address Books" />
+      <TableView fx:id="contactsTable" layoutX="8.0" layoutY="48.0" prefHeight="298.0" prefWidth="300.0" />
    </children>
 </AnchorPane>

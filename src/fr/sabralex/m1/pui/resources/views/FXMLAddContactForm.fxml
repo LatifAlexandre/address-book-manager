@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="358.0" prefWidth="359.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.sabralex.m1.pui.java.controllers.FXMLAddContactFormController">
+<AnchorPane id="AnchorPane" prefHeight="358.0" prefWidth="359.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.sabralex.m1.pui.java.controllers.FXMLAddContactFormController">
    <children>
-      <JFXComboBox fx:id="addressBookComboBox" labelFloat="true" layoutX="97.0" layoutY="14.0" prefHeight="25.0" prefWidth="166.0" promptText="Address Book" />
+      <JFXComboBox fx:id="addressBooksComboBox" labelFloat="true" layoutX="97.0" layoutY="14.0" prefHeight="25.0" prefWidth="166.0" promptText="Address Book" />
       <JFXTextField fx:id="firstNameTextField" labelFloat="true" layoutX="11.0" layoutY="93.0" prefHeight="23.0" prefWidth="150.0" promptText="First name" />
       <JFXTextField fx:id="lastNameTextField" labelFloat="true" layoutX="200.0" layoutY="93.0" prefHeight="23.0" prefWidth="150.0" promptText="Last name" />
       <JFXToggleButton fx:id="genderToggleButton" layoutX="131.0" layoutY="45.0" onAction="#handleGenderToggleButtonAction" text="Man" toggleColor="#a4356b" toggleLineColor="#fc53a2" unToggleColor="#39279e" unToggleLineColor="#6142ff" />
